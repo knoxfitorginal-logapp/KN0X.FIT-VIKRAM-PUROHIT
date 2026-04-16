@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>KN0X-FIT Interactive Diet Plan</title>
+    <title>KN0X.FIT Interactive Diet Plan</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,8 +94,8 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <a href="https://kn0x.fit/" target="_blank" class="flex items-center absolute left-1/2 transform -translate-x-1/2">
-                <img src="./src/assets/final_logo-removebg-preview (1).png" alt="KN0X-FIT Logo" class="h-16 w-auto scale-110 origin-center" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                <div class="hidden text-xl font-black text-zinc-900 italic tracking-tighter uppercase"><span class="text-red-600">KN0X</span>-FIT</div>
+                <img src="./src/assets/final_logo-removebg-preview (1).png" alt="KN0X.FIT Logo" class="h-16 w-auto scale-110 origin-center" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="hidden text-xl font-black text-zinc-900 italic tracking-tighter uppercase"><span class="text-red-600">KN0X</span>.FIT</div>
             </a>
             <div class="w-8"></div> 
         </div>
@@ -106,6 +106,7 @@
             <button data-view="week2" class="mobile-tab flex-shrink-0 px-5 py-2 text-sm font-bold text-zinc-500 whitespace-nowrap hover:bg-zinc-100 rounded-full">Phase 02</button>
             <button data-view="week3" class="mobile-tab flex-shrink-0 px-5 py-2 text-sm font-bold text-zinc-500 whitespace-nowrap hover:bg-zinc-100 rounded-full">Phase 03</button>
             <button data-view="week4" class="mobile-tab flex-shrink-0 px-5 py-2 text-sm font-bold text-zinc-500 whitespace-nowrap hover:bg-zinc-100 rounded-full">Phase 04</button>
+            <button data-view="workout" class="mobile-tab flex-shrink-0 px-5 py-2 text-sm font-bold text-zinc-500 whitespace-nowrap hover:bg-zinc-100 rounded-full">Workout Plan</button>
             <button data-view="keyNotes" class="mobile-tab flex-shrink-0 px-5 py-2 text-sm font-bold text-zinc-500 whitespace-nowrap hover:bg-zinc-100 rounded-full">Rules</button>
             <button data-view="explore" class="mobile-tab flex-shrink-0 px-5 py-2 text-sm font-bold text-zinc-500 whitespace-nowrap hover:bg-zinc-100 rounded-full">Upgrades</button>
         </div>
@@ -120,7 +121,7 @@
         <aside id="sidebar" class="bg-white w-[85vw] max-w-[320px] shadow-2xl fixed top-0 left-0 h-full z-50 transform -translate-x-full transition-transform duration-300 lg:translate-x-0 lg:relative lg:flex-shrink-0 border-r border-zinc-200 overflow-y-auto flex flex-col lg:w-72">
             <div class="py-8 flex items-center justify-center border-b border-zinc-100 bg-white sticky top-0 z-10">
                 <a href="https://kn0x.fit/" target="_blank" class="contents active:scale-95 transition-transform">
-                    <img src="./src/assets/final_logo-removebg-preview (1).png" alt="KN0X-FIT Logo" class="h-20 md:h-24 w-auto">
+                    <img src="./src/assets/final_logo-removebg-preview (1).png" alt="KN0X.FIT Logo" class="h-20 md:h-24 w-auto">
                 </a>
                 <button id="sidebar-close" class="lg:hidden absolute top-4 right-4 text-zinc-400 hover:text-red-600 p-3 active:scale-90 transition-transform">
                     <i class="fa-solid fa-xmark text-xl"></i>
@@ -146,6 +147,11 @@
                     </a>
                     <a href="#" data-view="week4" class="nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-zinc-600 font-semibold">
                         <i class="fa-solid fa-crown w-6 text-center text-lg"></i> Phase 04: Apex
+                    </a>
+
+                    <p class="px-4 text-[10px] font-black text-zinc-400 uppercase tracking-widest mt-8 mb-3">Training Phase</p>
+                    <a href="#" data-view="workout" class="nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-zinc-600 font-semibold">
+                        <i class="fa-solid fa-dumbbell w-6 text-center text-lg"></i> Workout Plan
                     </a>
                     
                     <p class="px-4 text-[10px] font-black text-zinc-400 uppercase tracking-widest mt-8 mb-3">Resources</p>
@@ -676,7 +682,7 @@
                         <div class="absolute -top-20 -right-20 w-64 h-64 bg-red-600 rounded-full blur-[100px] opacity-40"></div>
                         <div class="relative z-10">
                             <p class="text-[10px] sm:text-xs font-black text-red-500 uppercase tracking-[0.2em] mb-2 flex items-center"><i class="fa-solid fa-bolt mr-2"></i> Built For Change</p>
-                            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight mb-3 sm:mb-4">Welcome to <span class="text-white italic">KN0X-FIT</span></h2>
+                            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight mb-3 sm:mb-4">Welcome to <span class="text-white italic">KN0X.FIT</span></h2>
                             <p class="text-zinc-300 text-sm sm:text-base md:text-lg">Hello <span class="font-bold text-white">${client.name}</span>. Your <strong class="text-red-400 uppercase text-xs tracking-wider border-b border-red-500/50 pb-0.5">PURE MUSCLE GAIN</strong> blueprint is active. Follow this advanced surplus strictly for 30 days to pack on dense mass.</p>
                         </div>
                     </div>
@@ -1223,7 +1229,7 @@
             mainContent.innerHTML = `
                 <div class="content-fade-in max-w-5xl mx-auto">
                     <div class="mb-10 text-center">
-                        <h2 class="text-3xl md:text-4xl font-black text-zinc-900 tracking-tight leading-tight mb-4">Level Up With <span class="text-red-600 italic">KN0X-FIT</span></h2>
+                        <h2 class="text-3xl md:text-4xl font-black text-zinc-900 tracking-tight leading-tight mb-4">Level Up With <span class="text-red-600 italic">KN0X.FIT</span></h2>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
